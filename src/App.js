@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          메추리하우스 홈페이지 공사 중
         </a>
       </header>
     </div>
