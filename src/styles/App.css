@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.container {
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #ffffff;
+  padding: 1em;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a,
+.contact-link {
+  margin-right: 1em;
+  text-decoration: none;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buy-template-btn {
+  padding: 0.5em 1em;
+  background-color: #6658f6;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.main {
+  text-align: center;
+  padding: 2em;
+  background-color: #f8f7ff;
+}
+
+.hero h1 {
+  color: #333;
+}
+
+.hero p {
+  color: #666;
+}
+
+.features h2 {
+  margin-bottom: 1em;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.feature h3 {
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+}
+
+@media (max-width: 1200px) {
+  .desktop-nav {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 810px) {
+  .header,
+  .main {
+    padding: 1em;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 390px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .buy-template-btn {
+    width: 100%;
+  }
+}
+
+.desktop-nav {
+  display: block; /* Shown by default */
+}
+
+.mobile-nav {
+  display: none; /* Hidden by default */
+}
+
+
